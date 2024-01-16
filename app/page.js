@@ -4,7 +4,7 @@ import { motion } from "framer-motion";;
 import Head from 'next/head';
 import { BsFillMoonStarsFill } from 'react-icons/bs';
 import { AiFillLinkedin, AiFillInstagram, AiFillHtml5 } from "react-icons/ai";
-import { SiWhatsapp } from "react-icons/si";
+import { SiInstagram, SiLinkedin, SiWhatsapp } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiPhp, SiLaravel, SiBootstrap, SiPhpmyadmin, SiReact, SiGit, SiCss3, SiTailwindcss, SiNextdotjs } from "react-icons/si";
 import Image from 'next/image';
@@ -15,6 +15,7 @@ import klinik from "../public/klinik.PNG"
 import { useState } from 'react';
 import { useEffect } from "react";
 import Footer from "./Footer";
+
 
 
 export default function Home() {
@@ -99,130 +100,136 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div className="flex flex-col p-4 sm:p-10 ">
-            <motion.h2
-              className="font-burtons text-xl mb-4 sm:mb-0 bg-gradient-to-r from-cyan-500 via-green-500 to-teal-500 text-4xl sm:text-5xl font-bold mb-5 text-transparent bg-clip-text"
-              initial={{ opacity: 0, y: -50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-            >
-              About Me
-            </motion.h2>
 
-            <motion.h1 className="py-10 mb-12 flex flex-col sm:flex-row justify-between text-gray-800 dark:text-gray-200 bg-clip-text"
-              initial={{ opacity: 0, y: -50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-            >
-              Lulusan baru dari Politeknik Negeri Padang dengan Program Studi Manajemen Informatika.
-              Selama ini, saya telah berhasil menyelesaikan beberapa proyek yang berhubungan dengan pemrograman, dan telah menjalani magang di Codelabs Indonesia (PT. Digital Angkasa Indonesia) sebagai software development.
-              Saya tertarik untuk belajar hal-hal baru, komunikatif, pekerja keras, disiplin dan tertarik untuk mempelajari berbagai bidang baik secara individu maupun di dalam tim.
-            </motion.h1>
+          <div className="flex flex-col sm:flex-row items-center">
+            <div className="mb-10 flex flex-col items-center p-4 sm:p-10">
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                className='mt-0 relative mx-auto rounded-full bg-gradient-to-b from-teal-500 rounded-full w-20 sm:w-40 h-20 sm:h-40 my-4 sm:my-12 overflow-hidden'
+                style={{ marginTop: "-20px" }}
+              >
+                <Image src={deved} layout="fill" objectFit="cover" alt="Bendera" />
+              </motion.div>
 
-            <p className="text-gray-600 text-sm sm:text-md py-2 sm:py-5 leading-6 sm:leading-8">
-
-            </p>
-          </div>
-
-          <div className="flex flex-col p-4 sm:p-10 ">
-            <motion.div
-              whileHover={{ scale: 1.1 }}
-              className='relative mx-auto rounded-full bg-gradient-to-b from-teal-500 rounded-full w-40 sm:w-80 h-40 sm:h-80 my-8 sm:my-20 overflow-hidden'
-            >
-              <Image src={deved} layout="fill" objectFit="cover" alt="Bendera" />
-            </motion.div>
-
-            <motion.div
-              whileHover={{ scale: 1.1 }}
-              className='text-3xl sm:text-5xl flex justify-center gap-8 sm:gap-16 tpy-6 sm:py-11'
-            >
-              <a href=' https://wa.me/6283190108040' target='_blank' rel='noopener noreferrer'>
+              {/* Icons below the image */}
+              <div className="flex gap-4 mt-4">
                 <motion.div whileHover={{ scale: 1.1 }}>
                   <SiWhatsapp className="text-green-500" />
                 </motion.div>
-              </a>
-              <a href='https://linkedin.com/in/ryan-febrialdo-a8b210222' target='_blank' rel='noopener noreferrer'>
                 <motion.div whileHover={{ scale: 1.1 }}>
-                  <AiFillLinkedin className="text-blue-900" />
+                  <SiLinkedin className="text-blue-900" />
                 </motion.div>
-              </a>
-              <a href='https://www.instagram.com/rfebrialdo_' target='_blank' rel='noopener noreferrer'>
                 <motion.div whileHover={{ scale: 1.1 }}>
-                  <AiFillInstagram className='text-instagram' />
+                  <SiInstagram className='text-instagram' />
                 </motion.div>
-              </a>
-            </motion.div>
+              </div>
+            </div>
 
+            {/* Right side with the rest of the "About Me" section */}
+            <div className="flex flex-col p-4 sm:p-10">
+              <motion.h2
+                className="font-burtons text-xl mb-4 sm:mb-0 bg-gradient-to-r from-cyan-500 via-green-500 to-teal-500 text-4xl sm:text-5xl font-bold mb-5 text-transparent bg-clip-text"
+                initial={{ opacity: 0, y: -50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+              >
+                About Me
+              </motion.h2>
+              <motion.h1
+                className="py-8 mb-12 text-gray-800 dark:text-gray-200 bg-clip-text"
+                initial={{ opacity: 0, y: -50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+              >
+                Lulusan baru dari Politeknik Negeri Padang dengan Program Studi Manajemen Informatika.Selama ini, saya telah berhasil menyelesaikan beberapa proyek yang berhubungan dengan pemrograman, dan telah menjalani magang di Codelabs Indonesia (PT. Digital Angkasa Indonesia) sebagai software development. Saya tertarik untuk belajar hal-hal baru, komunikatif, pekerja keras, disiplin dan tertarik untuk mempelajari berbagai bidang baik secara individu maupun di dalam tim.
+              </motion.h1>
+            </div>
           </div>
 
-          <section clas>
-            <motion.div
-              whileHover={{ scale: 1.1 }}
-              className='text-3xl text-center sm:text-5xl font-bold mb-2 text-teal-500'
-
-            >
-              Skills
-            </motion.div>
-            <h2 className="text-2xl font-bold mb-4 dark:text-white bg-clip-text">Pemula</h2>
-            <motion.div
-              whileHover={{ scale: 1.1 }}
-              className='text-3xl sm:text-5xl flex flex-wrap gap-4 sm:gap-8 text-gray-500 py-6 sm:py-11'
-            >
-              {/* Logo untuk pemula di sini */}
-              <div>
-                <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r border-gray-500 p-4 shadow-md text-yellow-400">
-                  <IoLogoJavascript className='hover:text-yellow-400' />
+          <section className="mt-32">
+            <div className="flex flex-col sm:flex-row items-center">
+              <div className="mb-10 flex flex-col items-center p-4 sm:p-10">
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  className='text-3xl sm:text-5xl font-bold mb-2 text-teal-500'
+                >
+                  Skills
                 </motion.div>
               </div>
+              <div className="flex flex-col p-4 sm:p-10 table-r">
+                <motion.h2
+                  className="text-2xl font-bold mb-4 dark:text-white bg-clip-text text-center"
+                  initial={{ opacity: 0, y: -50 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5 }}
+                >
+                  Pemula
+                </motion.h2>
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  className='text-3xl sm:text-5xl flex flex-wrap gap-4 sm:gap-8 text-gray-500 py-6 sm:py-11'
+                >
+                  <div>
+                    <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r border-gray-500 p-4 shadow-md text-yellow-400">
+                      <IoLogoJavascript className='hover:text-yellow-400' />
+                    </motion.div>
+                  </div>
 
-              <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r  border-gray-500 p-4 shadow-md text-blue-300">
-                <SiReact className='hover:text-blue-300' />
-              </motion.div>
-              <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r border-gray-500 p-4 shadow-md text-orange-500">
-                <SiGit />
-              </motion.div>
-              <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r border-gray-500 p-4 shadow-md">
-                <SiTailwindcss style={{ color: '#0000FF' }}  />
-              </motion.div>
+                  <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r  border-gray-500 p-4 shadow-md text-blue-300">
+                    <SiReact className='hover:text-blue-300' />
+                  </motion.div>
+                  <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r border-gray-500 p-4 shadow-md text-orange-500">
+                    <SiGit />
+                  </motion.div>
+                  <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r border-gray-500 p-4 shadow-md">
+                    <SiTailwindcss style={{ color: '#0000FF' }} />
+                  </motion.div>
 
-              <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r  border-gray-500 p-4 shadow-md text-black">
-                <SiNextdotjs className='hover:text-black' />
-              </motion.div>
-
-            </motion.div>
-            {/* Tambahan logo untuk pemula di sini */}
-          </section>
-
-          <section>
-            <h2 className="text-2xl font-bold mb-4 dark:text-white bg-clip-text">Mahir</h2>
-            <motion.div
-              whileHover={{ scale: 1.1 }}
-              className='text-3xl sm:text-5xl flex flex-wrap  gap-4 sm:gap-8 text-gray-500 py-6 sm:py-11'
-            >
-              <div>
-                {/* Logo untuk yang mahir di sini */}
-                <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r border-gray-500 p-4 shadow-md text-blue-900">
-                  <SiPhp className='hover:text-blue-900' />
+                  <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r  border-gray-500 p-4 shadow-md text-black">
+                    <SiNextdotjs className='hover:text-black' />
+                  </motion.div>
                 </motion.div>
               </div>
-              <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r border-gray-500 p-4 shadow-md text-purple-600">
-                <SiBootstrap className='hover:text-purple-600' />
-              </motion.div>
-              <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r border-gray-500 p-4 shadow-md text-orange-500">
-                <AiFillHtml5 className='hover:text-orange-500 ' />
-              </motion.div>
-              <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r border-gray-500 p-4 shadow-md text-red-500">
-                <SiLaravel className='hover:text-red-500' />
-              </motion.div>
-              <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r border-gray-500 p-4 shadow-md text-blue-800">
-                <SiCss3 className='hover:text-blue-800' />
-              </motion.div>
-              <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r border-gray-500 p-4 shadow-md">
-                <SiPhpmyadmin />
-              </motion.div>
-
-            </motion.div>
+            
+              <div className="flex flex-col p-4 sm:p-10">
+                <motion.h2
+                  className="text-2xl font-bold mb-4 dark:text-white bg-clip-text text-center"
+                  initial={{ opacity: 0, y: -50 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5 }}
+                >
+                  Mahir
+                </motion.h2>
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  className='text-3xl sm:text-5xl flex flex-wrap gap-4 sm:gap-8 text-gray-500 py-6 sm:py-11'
+                >
+                  <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r border-gray-500 p-4 shadow-md text-blue-900">
+                    <SiPhp className='hover:text-blue-900' />
+                  </motion.div>
+                  <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r border-gray-500 p-4 shadow-md text-purple-600">
+                    <SiBootstrap className='hover:text-purple-600' />
+                  </motion.div>
+                  <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r border-gray-500 p-4 shadow-md text-orange-500">
+                    <AiFillHtml5 className='hover:text-orange-500 ' />
+                  </motion.div>
+                  <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r border-gray-500 p-4 shadow-md text-red-500">
+                    <SiLaravel className='hover:text-red-500' />
+                  </motion.div>
+                  <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r border-gray-500 p-4 shadow-md text-blue-800">
+                    <SiCss3 className='hover:text-blue-800' />
+                  </motion.div>
+                  <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r border-gray-500 p-4 shadow-md">
+                    <SiPhpmyadmin />
+                  </motion.div>
+                </motion.div>
+              </div>
+            </div>
+        
           </section>
+
+
+
 
 
           <section id='experienceSection'>
