@@ -226,7 +226,7 @@ export default function Home() {
                   <h3 className="text-lg font-medium pt-8 pb-2  ">
                     Web Development
                   </h3>
-                  <p className="py-2 text-gray-800 dark:text-gray-200">
+                  <p className="py-2 text-gray-800">
 
                     Dalam  pengembangan web, saya  menggunakan Laravel PHP untuk menciptakan pengalaman digital yang memukau.
                   </p>
