@@ -245,7 +245,7 @@ export default function Home() {
                   <h3 className="text-lg font-medium pt-8 pb-2  ">
                     Web Development
                   </h3>
-                  <p className="py-2 text-gray-800 dark:text-gray-200">
+                  <p className="py-2 text-gray-800 ">
                     Dalam konteks pengembangan front-end menggunakan JavaScript, saya menyuguhkan antarmuka digital dengan kecermatan dan keprofesionalan. 
                     Setiap baris kode yang saya susun menjadi dasar bagi pengalaman pengguna yang interaktif dan dinamis
                   </p>
@@ -261,7 +261,7 @@ export default function Home() {
           </section>
           <section className="py-10" id="projectSection">
             <div>
-              <h3 className="text-3xl py-1 text-gray-800 dark:text-gray-200 ">Portofolio</h3>
+              <h3 className="text-3xl py-1 text-gray-800 ">Portofolio</h3>
               <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Dalam masa perkuliahan saya telah membuat beberapa proyek kecil untuk menunjang skills saya dan menyelesaikan beberapa tugas kuliah.
                 Proyek yang saya buat ad yang bersifat individu ada dan tim
