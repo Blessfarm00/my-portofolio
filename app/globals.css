@@ -37,10 +37,6 @@ nav.navbar {
   border-bottom: 2px solid #fff; /* Warna dan gaya garis yang diinginkan */
 }
 
-.instagram-icon {
-  color: #bc2a8d; /* Warna resmi Instagram */
-}
-
-.instagram-icon:hover {
-  color: #e95950; /* Warna saat dihover - optional */
+.text-instagram {
+  color: #405DE6; /* Instagram color code */
 }

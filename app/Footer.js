@@ -23,7 +23,7 @@ export default function Footer() {
                 whileHover={{ scale: 1.1 }}
             />
             <p className="mt-4 text-gray-600 dark:text-gray-400">
-                © {new Date().getFullYear()} developedbyRyan. All rights reserved.
+                © {new Date().getFullYear()} developedbyRyan. All rights reserved.| Made with Next.Js
             </p>
             <ContactForm />
     </footer >

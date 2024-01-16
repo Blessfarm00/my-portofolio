@@ -6,7 +6,7 @@ import { BsFillMoonStarsFill } from 'react-icons/bs';
 import { AiFillLinkedin, AiFillInstagram, AiFillHtml5 } from "react-icons/ai";
 import { SiWhatsapp } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
-import { SiPhp, SiLaravel, SiBootstrap, SiPhpmyadmin, SiReact, SiGit, SiCss3 } from "react-icons/si";
+import { SiPhp, SiLaravel, SiBootstrap, SiPhpmyadmin, SiReact, SiGit, SiCss3, SiTailwindcss, SiNextdotjs } from "react-icons/si";
 import Image from 'next/image';
 import deved from "../public/bg-merah.png";
 import code from "../public/code.png";
@@ -114,9 +114,9 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              Lulusan baru dari Politeknik Negeri Padang dengan Program Studi Manajemen Informatika. 
+              Lulusan baru dari Politeknik Negeri Padang dengan Program Studi Manajemen Informatika.
               Selama ini, saya telah berhasil menyelesaikan beberapa proyek yang berhubungan dengan pemrograman, dan telah menjalani magang di Codelabs Indonesia (PT. Digital Angkasa Indonesia) sebagai software development.
-               Saya tertarik untuk belajar hal-hal baru, komunikatif, pekerja keras, disiplin dan tertarik untuk mempelajari berbagai bidang baik secara individu maupun di dalam tim.
+              Saya tertarik untuk belajar hal-hal baru, komunikatif, pekerja keras, disiplin dan tertarik untuk mempelajari berbagai bidang baik secara individu maupun di dalam tim.
             </motion.h1>
 
             <p className="text-gray-600 text-sm sm:text-md py-2 sm:py-5 leading-6 sm:leading-8">
@@ -134,27 +134,27 @@ export default function Home() {
 
             <motion.div
               whileHover={{ scale: 1.1 }}
-              className='text-3xl sm:text-5xl flex justify-center gap-8 sm:gap-16 text-gray-500 py-6 sm:py-11'
+              className='text-3xl sm:text-5xl flex justify-center gap-8 sm:gap-16 tpy-6 sm:py-11'
             >
               <a href=' https://wa.me/6283190108040' target='_blank' rel='noopener noreferrer'>
                 <motion.div whileHover={{ scale: 1.1 }}>
-                  <SiWhatsapp className="hover:text-green-500" />
+                  <SiWhatsapp className="text-green-500" />
                 </motion.div>
               </a>
               <a href='https://linkedin.com/in/ryan-febrialdo-a8b210222' target='_blank' rel='noopener noreferrer'>
                 <motion.div whileHover={{ scale: 1.1 }}>
-                  <AiFillLinkedin className="hover:text-blue-500" />
+                  <AiFillLinkedin className="text-blue-900" />
                 </motion.div>
               </a>
               <a href='https://www.instagram.com/rfebrialdo_' target='_blank' rel='noopener noreferrer'>
                 <motion.div whileHover={{ scale: 1.1 }}>
-                  <AiFillInstagram className='hover:text-orange-500' />
+                  <AiFillInstagram className='text-instagram' />
                 </motion.div>
               </a>
             </motion.div>
 
           </div>
-          
+
           <section clas>
             <motion.div
               whileHover={{ scale: 1.1 }}
@@ -169,17 +169,28 @@ export default function Home() {
               className='text-3xl sm:text-5xl flex flex-wrap gap-4 sm:gap-8 text-gray-500 py-6 sm:py-11'
             >
               {/* Logo untuk pemula di sini */}
-            <div>
+              <div>
+                <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r border-gray-500 p-4 shadow-md text-yellow-400">
+                  <IoLogoJavascript className='hover:text-yellow-400' />
+                </motion.div>
+              </div>
+
+              <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r  border-gray-500 p-4 shadow-md text-blue-300">
+                <SiReact className='hover:text-blue-300' />
+              </motion.div>
+              <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r border-gray-500 p-4 shadow-md text-orange-500">
+                <SiGit />
+              </motion.div>
               <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r border-gray-500 p-4 shadow-md">
-                <AiFillHtml5 className='hover:text-orange-500 ' />
+                <SiTailwindcss style={{ color: '#0000FF' }}  />
               </motion.div>
-            </div>
-              <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r  border-gray-500 p-4 shadow-md">
-                <IoLogoJavascript className='hover:text-yellow-400' />
+
+              <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r  border-gray-500 p-4 shadow-md text-black">
+                <SiNextdotjs className='hover:text-black' />
               </motion.div>
-              
+
             </motion.div>
-              {/* Tambahan logo untuk pemula di sini */}
+            {/* Tambahan logo untuk pemula di sini */}
           </section>
 
           <section>
@@ -189,20 +200,27 @@ export default function Home() {
               className='text-3xl sm:text-5xl flex flex-wrap  gap-4 sm:gap-8 text-gray-500 py-6 sm:py-11'
             >
               <div>
-              {/* Logo untuk yang mahir di sini */}
-              <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r border-gray-500 p-4 shadow-md">
-                <SiPhp className='hover:text-blue-900' />
-              </motion.div>
+                {/* Logo untuk yang mahir di sini */}
+                <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r border-gray-500 p-4 shadow-md text-blue-900">
+                  <SiPhp className='hover:text-blue-900' />
+                </motion.div>
               </div>
-              <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r border-gray-500 p-4 shadow-md">
+              <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r border-gray-500 p-4 shadow-md text-purple-600">
                 <SiBootstrap className='hover:text-purple-600' />
               </motion.div>
-              <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r border-gray-500 p-4 shadow-md">
+              <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r border-gray-500 p-4 shadow-md text-orange-500">
                 <AiFillHtml5 className='hover:text-orange-500 ' />
               </motion.div>
-              <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r border-gray-500 p-4 shadow-md">
+              <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r border-gray-500 p-4 shadow-md text-red-500">
                 <SiLaravel className='hover:text-red-500' />
               </motion.div>
+              <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r border-gray-500 p-4 shadow-md text-blue-800">
+                <SiCss3 className='hover:text-blue-800' />
+              </motion.div>
+              <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r border-gray-500 p-4 shadow-md">
+                <SiPhpmyadmin />
+              </motion.div>
+
             </motion.div>
           </section>
 
@@ -246,14 +264,14 @@ export default function Home() {
                     Web Development
                   </h3>
                   <p className="py-2 text-gray-800 ">
-                    Dalam konteks pengembangan front-end menggunakan JavaScript, saya menyuguhkan antarmuka digital dengan kecermatan dan keprofesionalan. 
+                    Dalam konteks pengembangan front-end menggunakan JavaScript, saya menyuguhkan antarmuka digital dengan kecermatan dan keprofesionalan.
                     Setiap baris kode yang saya susun menjadi dasar bagi pengalaman pengguna yang interaktif dan dinamis
                   </p>
                   <h4 className="py-4 text-teal-600">Tools I Use</h4>
                   <p className="text-gray-800 py-1">Tailwind</p>
                   <p className="text-gray-800 py-1">React.JS</p>
                   <p className="text-gray-800 py-1">Next.js</p>
-                  
+
                 </motion.div>
               </motion.section>
             </div>
@@ -263,12 +281,12 @@ export default function Home() {
             <div>
               <h3 className="text-3xl py-1 text-gray-800 ">Portofolio</h3>
               <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Dalam masa perkuliahan saya telah membuat beberapa proyek kecil untuk menunjang skills saya dan menyelesaikan beberapa tugas kuliah.
+                Dalam masa perkuliahan saya telah membuat beberapa proyek kecil untuk menunjang skills saya dan menyelesaikan beberapa tugas kuliah.
                 Proyek yang saya buat ad yang bersifat individu ada dan tim
-                
+
               </p>
               <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-               Berikut proyek yang pernah saya buat 
+                Berikut proyek yang pernah saya buat
               </p>
             </div>
             <div className="text-center justify-center flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
