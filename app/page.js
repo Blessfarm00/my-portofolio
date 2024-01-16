@@ -10,8 +10,6 @@ import { SiPhp, SiLaravel, SiBootstrap, SiPhpmyadmin, SiReact, SiGit, SiCss3 } f
 import Image from 'next/image';
 import deved from "../public/bg-merah.png";
 import code from "../public/code.png";
-import web1 from "../public/web1.png"
-import web2 from "../public/web2.png"
 import { useState } from 'react';
 import { useEffect } from "react";
 import Footer from "./Footer";
@@ -278,13 +276,6 @@ export default function Home() {
                   whileHover={{ scale: 1.1 }}
                   className="basis-1/3 flex-1 shadow-lg p-10 rounded-xl my-10 mx-4 dark:bg-white"
                 >
-                  <Image
-                    className="rounded-lg object-cover"
-                    width={500}
-                    height={500}
-                    layout="responsive"
-                    src={web1}
-                  />
                   <div className="max-w-md mx-auto">
                     <p className="py-2 text-justify">
                       Membuat website Sistem Informasi Manajemen Keperawatan Mandiri,
@@ -302,13 +293,6 @@ export default function Home() {
                   whileHover={{ scale: 1.1 }}
                   className="basis-1/3 flex-1 shadow-lg p-10 rounded-xl my-10 mx-4 dark:bg-white"
                 >
-                  <Image
-                    className="rounded-lg object-cover"
-                    width={300}
-                    height={300}
-                    layout="responsive"
-                    src={web2}
-                  />
                   <p className="py-2 text-left">
                     Membuat Website Sistem Informasi Manaemen Kedai Kopi Rona dan Mendesain Tampilan
                     ini Merupakan Project yang dilakukan saat magang
