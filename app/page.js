@@ -10,7 +10,7 @@ import { SiPhp, SiLaravel, SiBootstrap, SiPhpmyadmin, SiReact, SiGit, SiCss3 } f
 import Image from 'next/image';
 import deved from "../public/bg-merah.png";
 import code from "../public/code.png";
-import Web1 from "../public/Web1.png"
+import web1 from "../public/web1.png"
 import web2 from "../public/web2.png"
 import { useState } from 'react';
 import { useEffect } from "react";
@@ -283,7 +283,7 @@ export default function Home() {
                     width={500}
                     height={500}
                     layout="responsive"
-                    src={Web1}
+                    src={web1}
                   />
                   <div className="max-w-md mx-auto">
                     <p className="py-2 text-justify">
