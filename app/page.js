@@ -10,8 +10,8 @@ import { SiPhp, SiLaravel, SiBootstrap, SiPhpmyadmin, SiReact, SiGit, SiCss3 } f
 import Image from 'next/image';
 import deved from "../public/bg-merah.png";
 import code from "../public/code.png";
-import web1 from "../public/web1.png"
-import web2 from "../public/web2.png"
+import kopi from "../public/kopi.png"
+import klinik from "../public/klinik.PNG"
 import { useState } from 'react';
 import { useEffect } from "react";
 import Footer from "./Footer";
@@ -278,7 +278,7 @@ export default function Home() {
                   whileHover={{ scale: 1.1 }}
                   className="basis-1/3 flex-1 shadow-lg p-10 rounded-xl my-10 mx-4 dark:bg-white"
                 >
-                  <Image src={web1} width={500} height={500} className='mx-auto' alt="Picture of the author" />
+                  <Image src={klinik} width={500} height={500} className='mx-auto' alt="Picture of the author" />
                   <div className="max-w-md mx-auto">
                     <p className="py-2 text-justify">
                       Membuat website Sistem Informasi Manajemen Keperawatan Mandiri,
@@ -296,7 +296,7 @@ export default function Home() {
                   whileHover={{ scale: 1.1 }}
                   className="basis-1/3 flex-1 shadow-lg p-10 rounded-xl my-10 mx-4 dark:bg-white"
                 >
-                  <Image src={web2} width={500} height={500} className='mx-auto' alt="Picture of the author" />
+                  <Image src={kopi} width={500} height={500} className='mx-auto' alt="Picture of the author" />
                   <p className="py-2 text-left">
                     Membuat Website Sistem Informasi Manaemen Kedai Kopi Rona dan Mendesain Tampilan
                     ini Merupakan Project yang dilakukan saat magang
