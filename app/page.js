@@ -62,7 +62,7 @@ export default function Home() {
         <section className="min-h-screen" id="homeSection">
           <nav className="py-10 mb-12 flex flex-col sm:flex-row justify-between dark:text-white">
             <motion.h1
-              className="font-burtons text-xl mb-4 sm:mb-0"
+              className="font-burtons text-xl mb-4 sm:mb-0 text-gray-800 dark:text-gray-200"
               initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
@@ -109,7 +109,7 @@ export default function Home() {
               About Me
             </motion.h2>
 
-            <motion.h1 className="py-10 mb-12 flex flex-col sm:flex-row justify-between dark:text-white bg-clip-text"
+            <motion.h1 className="py-10 mb-12 flex flex-col sm:flex-row justify-between text-gray-800 dark:text-gray-200 bg-clip-text"
               initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
@@ -261,7 +261,7 @@ export default function Home() {
           </section>
           <section className="py-10" id="projectSection">
             <div>
-              <h3 className="text-3xl py-1 dark:text-white ">Portofolio</h3>
+              <h3 className="text-3xl py-1 text-gray-800 dark:text-gray-200 ">Portofolio</h3>
               <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Dalam masa perkuliahan saya telah membuat beberapa proyek kecil untuk menunjang skills saya dan menyelesaikan beberapa tugas kuliah.
                 Proyek yang saya buat ad yang bersifat individu ada dan tim
