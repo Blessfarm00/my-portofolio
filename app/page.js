@@ -17,7 +17,6 @@ import { useEffect } from "react";
 import Footer from "./Footer";
 
 
-
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
   useEffect(() => {
@@ -100,7 +99,6 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-
           <div className="flex flex-col sm:flex-row items-center">
             <div className="mb-10 flex flex-col items-center p-4 sm:p-10">
               <motion.div
@@ -112,15 +110,15 @@ export default function Home() {
               </motion.div>
 
               {/* Icons below the image */}
-              <div className="flex gap-4 mt-4">
+              <div className="text-2xl flex gap-4 mt-4">
                 <motion.div whileHover={{ scale: 1.1 }}>
-                  <SiWhatsapp className="text-green-500" />
+                  <SiWhatsapp className="cursor-pointer text-green-500" />
                 </motion.div>
                 <motion.div whileHover={{ scale: 1.1 }}>
-                  <SiLinkedin className="text-blue-900" />
+                  <SiLinkedin className="cursor-pointer text-blue-900" />
                 </motion.div>
                 <motion.div whileHover={{ scale: 1.1 }}>
-                  <SiInstagram className='text-instagram' />
+                  <SiInstagram className='cursor-pointer text-instagram' />
                 </motion.div>
               </div>
             </div>
@@ -146,90 +144,74 @@ export default function Home() {
             </div>
           </div>
 
-          <section className="mt-32">
-            <div className="flex flex-col sm:flex-row items-center">
-              <div className="mb-10 flex flex-col items-center p-4 sm:p-10">
-                <motion.div
-                  whileHover={{ scale: 1.1 }}
-                  className='text-3xl sm:text-5xl font-bold mb-2 text-teal-500'
-                >
-                  Skills
-                </motion.div>
-              </div>
-              <div className="flex flex-col p-4 sm:p-10 table-r">
-                <motion.h2
-                  className="text-2xl font-bold mb-4 dark:text-white bg-clip-text text-center"
-                  initial={{ opacity: 0, y: -50 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5 }}
-                >
-                  Pemula
-                </motion.h2>
-                <motion.div
-                  whileHover={{ scale: 1.1 }}
-                  className='text-3xl sm:text-5xl flex flex-wrap gap-4 sm:gap-8 text-gray-500 py-6 sm:py-11'
-                >
-                  <div>
-                    <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r border-gray-500 p-4 shadow-md text-yellow-400">
-                      <IoLogoJavascript className='hover:text-yellow-400' />
-                    </motion.div>
-                  </div>
+          <section className="mt-20">
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              className='text-3xl text-center sm:text-5xl font-bold mb-2 text-teal-500'
 
-                  <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r  border-gray-500 p-4 shadow-md text-blue-300">
-                    <SiReact className='hover:text-blue-300' />
-                  </motion.div>
-                  <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r border-gray-500 p-4 shadow-md text-orange-500">
-                    <SiGit />
-                  </motion.div>
-                  <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r border-gray-500 p-4 shadow-md">
-                    <SiTailwindcss style={{ color: '#0000FF' }} />
-                  </motion.div>
+            >
+              Skills
+            </motion.div>
+            <h2 className="text-2xl font-bold mb-4 dark:text-white bg-clip-text text-center mt-11 8 text-gray-800 dark:text-gray-200">Pemula</h2>
+            <div className="text-center">
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                className='text-3xl sm:text-5xl flex flex-wrap justify-center gap-4 sm:gap-8 text-gray-500 py-6 sm:py-11 8 text-gray-800 dark:text-gray-200'
+              >
+                {/* Logo untuk pemula di sini */}
+                <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r border-gray-500 p-4 shadow-md text-yellow-400">
+                  <IoLogoJavascript className='hover:text-yellow-400' />
+                </motion.div>
 
-                  <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r  border-gray-500 p-4 shadow-md text-black">
-                    <SiNextdotjs className='hover:text-black' />
-                  </motion.div>
+                <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r  border-gray-500 p-4 shadow-md text-blue-300">
+                  <SiReact className='hover:text-blue-300' />
                 </motion.div>
-              </div>
-            
-              <div className="flex flex-col p-4 sm:p-10">
-                <motion.h2
-                  className="text-2xl font-bold mb-4 dark:text-white bg-clip-text text-center"
-                  initial={{ opacity: 0, y: -50 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5 }}
-                >
-                  Mahir
-                </motion.h2>
-                <motion.div
-                  whileHover={{ scale: 1.1 }}
-                  className='text-3xl sm:text-5xl flex flex-wrap gap-4 sm:gap-8 text-gray-500 py-6 sm:py-11'
-                >
-                  <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r border-gray-500 p-4 shadow-md text-blue-900">
-                    <SiPhp className='hover:text-blue-900' />
-                  </motion.div>
-                  <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r border-gray-500 p-4 shadow-md text-purple-600">
-                    <SiBootstrap className='hover:text-purple-600' />
-                  </motion.div>
-                  <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r border-gray-500 p-4 shadow-md text-orange-500">
-                    <AiFillHtml5 className='hover:text-orange-500 ' />
-                  </motion.div>
-                  <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r border-gray-500 p-4 shadow-md text-red-500">
-                    <SiLaravel className='hover:text-red-500' />
-                  </motion.div>
-                  <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r border-gray-500 p-4 shadow-md text-blue-800">
-                    <SiCss3 className='hover:text-blue-800' />
-                  </motion.div>
-                  <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r border-gray-500 p-4 shadow-md">
-                    <SiPhpmyadmin />
-                  </motion.div>
+
+                <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r border-gray-500 p-4 shadow-md text-orange-500">
+                  <SiGit />
                 </motion.div>
-              </div>
+
+                <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r border-gray-500 p-4 shadow-md">
+                  <SiTailwindcss style={{ color: '#0000FF' }} />
+                </motion.div>
+
+                <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r  border-gray-500 p-4 shadow-md text-black">
+                  <SiNextdotjs className='hover:text-black' />
+                </motion.div>
+              </motion.div>
             </div>
-        
+
+            {/* Tambahan logo untuk pemula di sini */}
           </section>
 
-
-
+          <section>
+            <h2 className="text-2xl font-bold mb-4 dark:text-white bg-clip-text text-center 8 text-gray-800 dark:text-gray-200">Mahir</h2>
+            <div className="text-center">
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                className='text-3xl sm:text-5xl flex flex-wrap justify-center gap-4 sm:gap-8 text-gray-500 py-6 sm:py-11 8 text-gray-800 dark:text-gray-200'
+              >
+                <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r border-gray-500 p-4 shadow-md text-blue-900">
+                  <SiPhp className='hover:text-blue-900' />
+                </motion.div>
+                <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r border-gray-500 p-4 shadow-md text-purple-600">
+                  <SiBootstrap className='hover:text-purple-600' />
+                </motion.div>
+                <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r border-gray-500 p-4 shadow-md text-orange-500">
+                  <AiFillHtml5 className='hover:text-orange-500 ' />
+                </motion.div>
+                <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r border-gray-500 p-4 shadow-md text-red-500">
+                  <SiLaravel className='hover:text-red-500' />
+                </motion.div>
+                <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r border-gray-500 p-4 shadow-md text-blue-800">
+                  <SiCss3 className='hover:text-blue-800' />
+                </motion.div>
+                <motion.div whileHover={{ scale: 1.1 }} className="mb-4 border-b border-r border-gray-500 p-4 shadow-md">
+                  <SiPhpmyadmin />
+                </motion.div>
+              </motion.div>
+            </div>
+          </section>
 
 
           <section id='experienceSection'>
@@ -286,10 +268,10 @@ export default function Home() {
           </section>
           <section className="py-10" id="projectSection">
             <div>
-              <h3 className="text-3xl py-1 text-gray-800 ">Portofolio</h3>
+              <h3 className="text-3xl py-18 text-gray-800 dark:text-gray-200">Portofolio</h3>
               <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
                 Dalam masa perkuliahan saya telah membuat beberapa proyek kecil untuk menunjang skills saya dan menyelesaikan beberapa tugas kuliah.
-                Proyek yang saya buat ad yang bersifat individu ada dan tim
+                Proyek yang saya buat ad yang bersifat individu dan tim
 
               </p>
               <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
