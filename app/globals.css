@@ -25,3 +25,22 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.icon {
+  transition: transform 0.2s ease-in-out;
+}
+
+.icon:hover {
+  transform: scale(1.1); /* Perbesar ikon sebanyak 10% saat dihover */
+}
+nav.navbar {
+  border-bottom: 2px solid #fff; /* Warna dan gaya garis yang diinginkan */
+}
+
+.instagram-icon {
+  color: #bc2a8d; /* Warna resmi Instagram */
+}
+
+.instagram-icon:hover {
+  color: #e95950; /* Warna saat dihover - optional */
+}
