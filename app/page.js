@@ -69,11 +69,11 @@ export default function Home() {
             >
               developedbyRyan.
             </motion.h1>
-            <ul className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-6">
-              <li>
+            <ul className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-6 ">
+              <li className="text-gray-800 dark:text-gray-200">
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
-                  className="cursor-pointer text-2xl"
+                  className="cursor-pointer text-2xl "
                 />
               </li>
 
